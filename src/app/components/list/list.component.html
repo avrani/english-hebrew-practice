@@ -1,0 +1,14 @@
+<h2>My Vocabulary  {{allList.length}} words</h2>
+<table id="customers">
+  <tr>
+    <th>Hebrew</th>
+    <th>English</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let item of allList">
+    <td>{{item.heb}}</td>
+    <td>{{item.eng}}</td>
+    <td><button (click)="delete(item.id)"></button></td>
+  </tr>
+  
+</table>

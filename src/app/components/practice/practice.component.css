@@ -1,0 +1,39 @@
+button{
+    display:block;
+    padding:10px;
+}
+.success,.failure{
+    width:100px;
+    height:100px;
+    background-repeat:no-repeat;
+   
+    float:right;
+}
+.failure{
+    background-image: url(/assets/failure.png);
+}
+.success{
+    background-image: url(/assets/success.png);
+}
+
+
+h3{
+    text-align: center;
+}
+
+.choose-list{
+    height: 300px;
+    width: 180px;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+.choose-list button{
+    width:150px;
+}
+p{
+    text-align: center;
+}
+input[type='number']{
+    width: 130px;
+    height: 12px;
+}

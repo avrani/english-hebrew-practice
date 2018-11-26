@@ -1,0 +1,12 @@
+<h2>Practice,Play A Game</h2>
+<button (click)="play()">Play A New Game</button>
+<input type="number" min="5" [(ngModel)]="numToSelect" max="{{maxRange}}" (click)="fillWordsToChooseArr()"> 
+<h3 *ngIf="msgCanNotPlay">You need at list 5 words in your list to play,please add more words.</h3>
+<div *ngIf="showBoard" class="board">
+    <h3>Please choose the right transltion:</h3>
+    <p>{{wordToTranslate.heb}}</p>
+    <div [ngClass]="{'success':success,'failure':failure}"></div>
+    <div class="choose-list">
+        <button *ngFor="let word of wordsToChoose" (click)="userChooseWord(word.id)">{{word.eng}}</button>
+    </div>
+</div>
