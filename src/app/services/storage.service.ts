@@ -60,7 +60,7 @@ export class StorageService {
       dictionaryArr = JSON.parse(dictionaryFromStorage);
       for(let i in dictionaryArr){
         if(dictionaryArr[i].id==ID){
-          dictionaryArr.splice(0,1);
+          dictionaryArr.splice(parseInt(i),1);
           localStorage.dictionary = JSON.stringify(dictionaryArr);
         }
       }
