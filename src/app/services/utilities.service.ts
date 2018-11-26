@@ -7,10 +7,10 @@ export class UtilitiesService {
 
   sortingByAlphanumeric(arr) {
     arr.sort(function (a, b) {
-      if(a.eng === b.eng ){
+      if(a.eng.toLowerCase() === b.eng.toLowerCase() ){
         return 0;
       }
-      return a.eng < b.eng ? -1 : 1;
+      return a.eng.toLowerCase() < b.eng.toLowerCase() ? -1 : 1;
     });
     return arr;
   }
