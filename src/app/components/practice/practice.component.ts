@@ -62,14 +62,14 @@ export class PracticeComponent {
      setTimeout(()=>{
       this.success=false;
       this.play();
-      },2000)
+      },1000)
 
     } else {
       this.failure=true;
       this.success=false;
       setTimeout(()=>{
         this.failure=false;
-      },1500)
+      },1000)
     }
   }
 
