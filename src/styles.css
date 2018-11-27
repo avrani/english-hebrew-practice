@@ -2,10 +2,10 @@ h2{
     text-align: center;
 }
 .board{
-    border:gray solid 1px;
-    margin:0 auto;
-    width:400px;
-    height:400px;
-    padding:4px;
+    border: gray solid 1px;
+    margin: 0 auto;
+    width: 320px;
+    height: 350px;
+    padding: 4px;
    
 }

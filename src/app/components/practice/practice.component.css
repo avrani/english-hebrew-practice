@@ -1,6 +1,7 @@
-button{
+.new-game{
     display:block;
     padding:10px;
+    margin:0 auto;
 }
 .success,.failure{
     width:100px;
@@ -22,13 +23,14 @@ h3{
 }
 
 .choose-list{
-    height: 300px;
+    height: 250px;
     width: 180px;
     overflow-y: auto;
     padding-left: 10px;
 }
 .choose-list button{
     width:150px;
+    padding: 8px 27px 8px 27px;
 }
 p{
     text-align: center;
@@ -36,4 +38,8 @@ p{
 input[type='number']{
     width: 130px;
     height: 12px;
+}
+.select-num{
+    margin:0 auto;
+    display:block;
 }
